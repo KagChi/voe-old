@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Set up JDK 13
       uses: actions/setup-java@v3
       with:
@@ -25,4 +25,4 @@ jobs:
       run: ./gradlew tasks --all
        
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
